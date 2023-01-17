@@ -11,3 +11,12 @@ npm i
 ```shell
 npx cucumber-js --exit
 ```
+
+3. If you want to run the tests in headless mode, change the following code in `world.js`
+```js
+      headless: false,
+```
+to
+```js
+      headless: true,
+```
