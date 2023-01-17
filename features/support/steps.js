@@ -2,19 +2,19 @@ const { test, expect } = require("@playwright/test");
 const { Given, When, Then } = require("@cucumber/cucumber");
 
 Given("User launches {string} search page", async function (name) {
-  await this.openUrl("https://www.google.com/");
+  await this.openUrl(name);
 });
 
-Given("Page is loaded", async function () {
-  expect(this.page).toHaveTitle("Google");
+Given("{string} Page is loaded", async function (titleName) {
+  expect(this.page).toHaveTitle(titleName);
 });
 
 Then("Fill up the term {string} in search bar", async function (searchTerm) {
-  await this.page.getByRole("combobox", { name: "Search" }).fill("cute kitten");
+  await this.page.getByRole("combobox", { name: "Search" }).fill(searchTerm);
 });
 
 When("Click the {string} button", async function (buttonName) {
-  await this.page.getByRole("combobox", { name: "Search" }).press("Enter");
+  await this.page.getByRole("combobox", { name: buttonName }).press("Enter");
 });
 
 Then(
