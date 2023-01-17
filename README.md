@@ -9,5 +9,5 @@ npm i
 
 2. Run the following command to run the test
 ```shell
-./node_modules/.bin/cucumber-js --exit
+npx cucumber-js --exit
 ```
