@@ -20,9 +20,6 @@ When("Click the {string} button", async function (buttonName) {
 Then(
   "You should see the search page with {string} results",
   async function (searchTerm) {
-    await this.page
-      .getByRole("button", { name: "Image result for cute kitten Video" })
-      .first()
-      .click();
+    await this.page.getByRole('link', { name: `Images for ${searchTerm}`});
   }
 );
