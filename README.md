@@ -20,3 +20,8 @@ to
 ```js
       headless: true,
 ```
+
+4. To run the tests in parallel, run the following command
+```shell
+npx cucumber-js --exit --parallel 3
+```
