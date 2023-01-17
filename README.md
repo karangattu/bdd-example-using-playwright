@@ -14,11 +14,11 @@ npx cucumber-js --exit
 
 3. If you want to run the tests in headless mode, change the following code in `world.js`
 ```js
-      headless: false,
+headless: false,
 ```
 to
 ```js
-      headless: true,
+headless: true,
 ```
 
 4. To run the tests in parallel, run the following command
