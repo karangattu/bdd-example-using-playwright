@@ -1,0 +1,33 @@
+{
+  "name": "bdd-example-using-playwright",
+  "version": "1.0.0",
+  "description": "An example repo for leveraging cucumber for writing E2E tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karangattu/bdd-example-using-playwright.git"
+  },
+  "keywords": [
+    "cucumber",
+    "playwright",
+    "E2E",
+    "automation",
+    "frontend"
+  ],
+  "author": "Karan Gathani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karangattu/bdd-example-using-playwright/issues"
+  },
+  "homepage": "https://github.com/karangattu/bdd-example-using-playwright#readme",
+  "dependencies": {
+    "@cucumber/cucumber": "^8.10.0",
+    "playwright": "^1.29.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.29.2"
+  }
+}
